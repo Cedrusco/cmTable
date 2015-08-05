@@ -1,0 +1,17 @@
+<!doctype HTML5>
+<html ng-app="cmTable">
+  <head>
+    <title>cmTable</title>
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./main.css"/>
+  </head>
+  <body ng-controller="mainController">
+  <div class="container">
+    <table class="table table-hover table-striped" cm-table cm-table-data="dogSpecies"></table>
+  </div>
+  </body>
+</html>

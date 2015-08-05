@@ -1,0 +1,14 @@
+  <thead>
+    <tr>
+      <td ng-repeat="(key, val) in tabledata.rows[0]" ng-click="sortBy(key)">{{ key }}</td> 
+    </tr> 
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in tabledata.rows | orderBy:prop:reverse">
+      <td ng-repeat="(key, val) in row">{{ val }}</td> 
+    </tr> 
+      <tr class="form-group">
+        <label>Items per page</label>
+        <input type="text" class="form-control" ng-model="itemsPerPage" />
+      </tr>
+  </tbody>
