@@ -11,7 +11,17 @@
   </head>
   <body ng-controller="mainController">
   <div class="container">
-    <table class="table table-hover table-striped" cm-table cm-table-data="dogSpecies"></table>
+    <table class="table table-hover table-striped" cm-table cm-table-data="dogSpecies">
+      <thead>
+        <tr>
+          <th cm-table-param="name">Name</th> 
+          <th cm-table-param="pattern">Pattern</th> 
+          <th cm-table-param="size">Size</th> 
+        </tr> 
+      </thead> 
+      <tbody>
+      </tbody>
+    </table>
   </div>
   </body>
 </html>
